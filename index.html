@@ -1,0 +1,96 @@
+<html>
+	<title>Link Test</title>
+	<head>
+		<script>
+			function updateLinks()
+			{
+				user = document.getElementById("user").value;
+				if(user)
+				{
+					user += "@";
+				}
+				port = document.getElementById("port").value;
+				if(port)
+				{
+					port = ":" + port;
+				}
+				address = document.getElementById("address").value;
+				document.getElementById("rdp").innerHTML = "rdp://" + address;
+				document.getElementById("rdp").href = "rdp://" + address;
+				document.getElementById("sftp").innerHTML = "sftp://" + user + address;
+				document.getElementById("sftp").href = "sftp://" + user + address;
+				document.getElementById("vnc").innerHTML = "vnc://" + address + port;
+				document.getElementById("vnc").href = "vnc://" + address + port;
+				document.getElementById("ssh").innerHTML = "ssh://" + user + address;
+				document.getElementById("ssh").href = "ssh://" + user + address;
+				document.getElementById("ping").innerHTML = "ping://" + address;
+				document.getElementById("ping").href = "ping://" + address;
+				document.getElementById("telnet").innerHTML = "telnet://" + address + port;
+				document.getElementById("telnet").href = "telnet://" + user + address + port;
+			}
+			function clearLinks()
+			{
+				document.getElementById("rdp").innerHTML = "";
+				document.getElementById("rdp").href = "";
+				document.getElementById("sftp").innerHTML = "";
+				document.getElementById("sftp").href = "";
+				document.getElementById("vnc").innerHTML = "";
+				document.getElementById("vnc").href = "";
+				document.getElementById("ssh").innerHTML = "";
+				document.getElementById("ssh").href = "";
+				document.getElementById("ping").innerHTML = "";
+				document.getElementById("ping").href = "";
+				document.getElementById("telnet").innerHTML = "";
+				document.getElementById("telnet").href = "";
+				document.getElementById("user").value = "";
+				document.getElementById("port").value = "";
+				document.getElementById("address").value = "";
+			}
+		</script>
+	</head>
+	<body style="background-color:lightgrey;">
+		<div id=picker align="left">
+			<table style="font-size:30px">
+				<tr>
+					<td align=left>Server Address</td>
+					<td><input style="font-size:30px" type="text" id="address" name="address" /></td>
+				</tr>
+				<tr>
+					<td align=left>Username</td>
+					<td><input style="font-size:30px" type="text" id="user" name="user" /></td>
+				<tr>
+					<td align=left>Port</td>
+					<td><input style="font-size:30px" type="text" id="port" name="port" /></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td align=left><input style="font-size:30px" type="button" value="clear" onclick="clearLinks()" /><input style="font-size:30px"  type="button" value="update" onclick="updateLinks()" /></td>
+				</tr>
+			</table>
+			<p>
+			<table style="font-size:30px">		
+				<tr>
+					<td><a id=ssh href=""></a></td>
+				</tr>
+				<tr>
+					<td><a id=ping href=""></a></td>
+				</tr>
+				<tr>
+					<td><a id=sftp href=""></a></td>
+				</tr>
+				<tr>
+					<td><a id=vnc href=""></a></td>
+				</tr>
+				<tr>
+					<td><a id=rdp href=""></a></td>
+				</tr>
+				<tr>
+					<td><a id=telnet href=""></a></td>
+				</tr>
+				<tr>
+					<td><a id=ping href=""></a></td>
+				</tr>
+			</table>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,93 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_CLASSES_ROOT\ssh]
+"URL Protocol"=""
+@="URL:SSH Protocol"
+
+[HKEY_CLASSES_ROOT\ssh\DefaultIcon]
+@="C:\\ggconnect\\Applications\\putty.exe"
+
+[HKEY_CLASSES_ROOT\ssh\shell]
+@=""
+
+[HKEY_CLASSES_ROOT\ssh\shell\open]
+@=""
+
+[HKEY_CLASSES_ROOT\ssh\shell\open\command]
+@="wscript.exe C:\\ggconnect\\ggconnect.js %1"
+
+[HKEY_CLASSES_ROOT\telnet]
+"URL Protocol"=""
+@="URL:telnet Protocol"
+
+[HKEY_CLASSES_ROOT\telnet\DefaultIcon]
+@="C:\\ggconnect\\Applications\\putty.exe"
+
+[HKEY_CLASSES_ROOT\telnet\shell]
+@=""
+
+[HKEY_CLASSES_ROOT\telnet\shell\open]
+@=""
+
+[HKEY_CLASSES_ROOT\telnet\shell\open\command]
+@="wscript.exe C:\\ggconnect\\ggconnect.js %1"
+
+[HKEY_CLASSES_ROOT\ping]
+"URL Protocol"=""
+@="URL:Ping Protocol"
+
+[HKEY_CLASSES_ROOT\ping\DefaultIcon]
+@="C:\\windows\\system32\ping.exe"
+
+[HKEY_CLASSES_ROOT\ping\shell]
+@=""
+
+[HKEY_CLASSES_ROOT\ping\shell\open]
+@=""
+
+[HKEY_CLASSES_ROOT\ping\shell\open\command]
+@="wscript.exe C:\\ggconnect\\ggconnect.js %1"
+
+[HKEY_CLASSES_ROOT\vnc]
+"URL Protocol"=""
+@="URL:VNC Protocol"
+
+[HKEY_CLASSES_ROOT\vnc\DefaultIcon]
+@="C:\\ggconnect\\Applications\\VNC-Viewer.exe,0"
+
+[HKEY_CLASSES_ROOT\vnc\shell]
+@=""
+
+[HKEY_CLASSES_ROOT\vnc\shell\open]
+@=""
+
+[HKEY_CLASSES_ROOT\vnc\shell\open\command]
+@="wscript.exe C:\\ggconnect\\ggconnect.js %1"
+
+[HKEY_CLASSES_ROOT\sftp] 
+"URL Protocol"=""
+@="URL:SFTP Protocol"
+
+[HKEY_CLASSES_ROOT\sftp\DefaultIcon]
+@="C:\\ggconnect\\Applications\\FileZillaPortable\\FileZillaPortable.exe,0"
+
+[HKEY_CLASSES_ROOT\sftp\shell] 
+
+[HKEY_CLASSES_ROOT\sftp\shell\open] 
+
+[HKEY_CLASSES_ROOT\sftp\shell\open\command] 
+@="wscript.exe C:\\ggconnect\\ggconnect.js %1"
+
+[HKEY_CLASSES_ROOT\rdp] 
+"URL Protocol"=""
+@="URL:RDP Protocol"
+
+[HKEY_CLASSES_ROOT\rdp\DefaultIcon]
+@="C:\\Windows\\System32\\mstsc.exe,0"
+
+[HKEY_CLASSES_ROOT\rdp\shell] 
+
+[HKEY_CLASSES_ROOT\rdp\shell\open] 
+
+[HKEY_CLASSES_ROOT\rdp\shell\open\command] 
+@="wscript.exe C:\\ggconnect\\ggconnect.js %1"
